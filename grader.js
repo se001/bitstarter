@@ -28,7 +28,7 @@ var rest = require('restler');
 var HTMLFILE_DEFAULT = "index.html";
 var CHECKSFILE_DEFAULT = "checks.json";
 
-var geturl = function(url, checksfile) {
+var checkUrl = function(url, checksfile) {
     rest.get(url).on('complete', function(result) {
         $ = cheerio.load(result);
         var checks = loadChecks(checksfile).sort();
