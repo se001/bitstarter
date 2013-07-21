@@ -6,12 +6,11 @@ lib-cov
 *.out
 *.pid
 *.gz
-*.swp
-*.swo
 
 pids
 logs
 results
+index.html.*
 
 npm-debug.log
 node_modules
